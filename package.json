@@ -1,0 +1,29 @@
+{
+  "name": "nigga",
+  "version": "1.0.0",
+  "description": "Web ngawor",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node src/config/database/migrate.js"
+  },
+  "keywords": [],
+  "author": "Belu",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "helmet": "^8.2.0",
+    "ioredis": "^5.11.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.22.5",
+    "path": "^0.12.7",
+    "sequelize": "^6.37.8",
+    "umzug": "^3.8.3"
+  },
+  "repository": "https://github.com/Akhmat31/site-starter"
+}
