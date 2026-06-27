@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate": "node src/config/database/migrate.js"
+    "migrate": "node src/config/database/migrate.js",
+    "migrate:deploy": "pnpx prisma migrate deploy --schema=prisma/schema.prisma"
   },
   "keywords": [],
   "author": "Belu",
   "license": "MIT",
   "dependencies": {
+    "@prisma/client": "^7.8.0",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -22,8 +24,7 @@
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.22.5",
     "path": "^0.12.7",
-    "sequelize": "^6.37.8",
-    "umzug": "^3.8.3"
+    "prisma": "^7.8.0"
   },
   "repository": "https://github.com/Akhmat31/site-starter"
 }
