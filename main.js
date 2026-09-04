@@ -4,7 +4,7 @@ let base         = require("./src/base");
 let middleware   = require("./src/http/middleware/base-middleware-loader");
 
 var app     = express();
-var PORT    = 8000;
+var PORT    = 5000;
 
 app.use(cors());
 app.use(express.json());
